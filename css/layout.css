@@ -12,11 +12,25 @@
   --c10: calc(var(--c9) + var(--c1) + 2 * var(--gap));
   --c11: calc(var(--c10) + var(--c1) + 2 * var(--gap));
   --c12: calc(var(--c11) + var(--c1) + 2 * var(--gap));
+  --m0: var(--gap);
+  --m1: calc(var(--c1) + 3 * var(--gap));
+  --m2: calc(var(--c2) + 3 * var(--gap));
+  --m3: calc(var(--c3) + 3 * var(--gap));
+  --m4: calc(var(--c4) + 3 * var(--gap));
+  --m5: calc(var(--c5) + 3 * var(--gap));
+  --m6: calc(var(--c6) + 3 * var(--gap));
+  --m7: calc(var(--c7) + 3 * var(--gap));
+  --m8: calc(var(--c8) + 3 * var(--gap));
+  --m9: calc(var(--c9) + 3 * var(--gap));
+  --m10: calc(var(--c10) + 3 * var(--gap));
+  --m11: calc(var(--c11) + 3 * var(--gap));
+  --m12: calc(var(--c12) + 3 * var(--gap));
 }
 
 .container {
   display: inline-block;
   width: 100%;
+  padding: 80px 0;
 }
 
 .container > .row {
@@ -38,6 +52,7 @@
 .container > .row > .col-11,
 .container > .row > .col-12 {
   display: inline-block;
+  min-height: 1px;
   float: left;
   margin-left: var(--gap);
   margin-right: var(--gap);
@@ -90,3 +105,108 @@
 .container > .row > .col-12 {
   width: var(--c12);
 }
+
+.container > .row > .m-l-0 {
+  margin-left: var(--m0);
+}
+
+.container > .row > .m-l-1 {
+  margin-left: var(--m1);
+}
+
+.container > .row > .m-l-2 {
+  margin-left: var(--m2);
+}
+
+.container > .row > .m-l-3 {
+  margin-left: var(--m3);
+}
+
+.container > .row > .m-l-4 {
+  margin-left: var(--m4);
+}
+
+.container > .row > .m-l-5 {
+  margin-left: var(--m5);
+}
+
+.container > .row > .m-l-6 {
+  margin-left: var(--m6);
+}
+
+.container > .row > .m-l-7 {
+  margin-left: var(--m7);
+}
+
+.container > .row > .m-l-8 {
+  margin-left: var(--m8);
+}
+
+.container > .row > .m-l-9 {
+  margin-left: var(--m9);
+}
+
+.container > .row > .m-l-10 {
+  margin-left: var(--m10);
+}
+
+.container > .row > .m-l-11 {
+  margin-left: var(--m11);
+}
+
+.container > .row > .m-l-12 {
+  margin-left: var(--m12);
+}
+
+.container > .row > .m-r-0 {
+  margin-right: var(--m0);
+}
+
+.container > .row > .m-r-1 {
+  margin-right: var(--m1);
+}
+
+.container > .row > .m-r-2 {
+  margin-right: var(--m2);
+}
+
+.container > .row > .m-r-3 {
+  margin-right: var(--m3);
+}
+
+.container > .row > .m-r-4 {
+  margin-right: var(--m4);
+}
+
+.container > .row > .m-r-5 {
+  margin-right: var(--m5);
+}
+
+.container > .row > .m-r-6 {
+  margin-right: var(--m6);
+}
+
+.container > .row > .m-r-7 {
+  margin-right: var(--m7);
+}
+
+.container > .row > .m-r-8 {
+  margin-right: var(--m8);
+}
+
+.container > .row > .m-r-9 {
+  margin-right: var(--m9);
+}
+
+.container > .row > .m-r-10 {
+  margin-right: var(--m10);
+}
+
+.container > .row > .m-r-11 {
+  margin-right: var(--m11);
+}
+
+.container > .row > .m-r-12 {
+  margin-right: var(--m12);
+}
+/*# sourceMappingURL=layout.css.map */
