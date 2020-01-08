@@ -10,6 +10,44 @@
 // progress bar end //
 
 // our services start //
+const services = [
+    { 
+        icon: '',
+        heading: 'graphic design',
+        par: '',
+
+    },
+    { 
+        icon: '',
+        heading: '',
+        par: '',
+
+    },
+    { 
+        icon: '',
+        heading: '',
+        par: '',
+
+    },
+    { 
+        icon: '',
+        heading: '',
+        par: '',
+
+    },
+    { 
+        icon: '',
+        heading: '',
+        par: '',
+
+    },
+    { 
+        icon: '',
+        heading: '',
+        par: '',
+
+    },
+]
 // our services end //
 
 // achievements start //
