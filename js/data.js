@@ -12,39 +12,44 @@
 // our services start //
 const services = [
     { 
-        icon: '',
-        heading: 'graphic design',
-        par: '',
+        icon: 'ping',
+        heading: 'Graphic Design',
+        par: 'The standard chunk of Lorem Ipsum used since the is reproduced below for those interested',
+
 
     },
     { 
-        icon: '',
-        heading: '',
-        par: '',
+        icon: 'ping',
+        heading: 'Unlimited Color',
+        par: 'The standard chunk of Lorem Ipsum used since the is reproduced below for those interested',
+
 
     },
     { 
-        icon: '',
-        heading: '',
-        par: '',
+        icon: 'ping',
+        heading: 'Media Marketing',
+        par: 'The standard chunk of Lorem Ipsum used since the is reproduced below for those interested',
+
 
     },
     { 
-        icon: '',
-        heading: '',
-        par: '',
+        icon: 'ping',
+        heading: 'Unlimited Wifi',
+        par: 'The standard chunk of Lorem Ipsum used since the is reproduced below for those interested',
+
 
     },
     { 
-        icon: '',
-        heading: '',
-        par: '',
+        icon: 'ping',
+        heading: 'Responsive Design',
+        par: 'The standard chunk of Lorem Ipsum used since the is reproduced below for those interested',
+        
 
     },
     { 
-        icon: '',
-        heading: '',
-        par: '',
+        icon: 'ping',
+        heading: 'Easy to customize',
+        par: 'The standard chunk of Lorem Ipsum used since the is reproduced below for those interested',
 
     },
 ]
