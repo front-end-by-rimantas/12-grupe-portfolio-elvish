@@ -43,6 +43,28 @@ function renderSkills(data) {
 // progress bar end //
 
 // our services start //
+function renderServices(data){
+
+    let HTML = '';
+
+    for(let i=0; i<data.length; i++){
+        const service = data[i]
+        console.log(data)
+
+    
+        HTML +=  `<div class="services col-4 col-sm-12">
+                    <div class="content">
+                    <i class="fa ${service.icon}" aria-hidden="true"></i>
+                        <h5>${service.heading}</h5>
+                        <p>${service.par}</p>
+                    </div>
+                </div>`
+    
+
+    
+        document.querySelector('#serv').innerHTML = HTML;
+     }   
+} 
 // our services end //
 
 // achievements start //

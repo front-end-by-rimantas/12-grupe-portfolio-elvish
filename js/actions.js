@@ -11,6 +11,7 @@
 // progress bar end //
 
 // our services start //
+renderServices(services);
 // our services end //
 
 // achievements start //
