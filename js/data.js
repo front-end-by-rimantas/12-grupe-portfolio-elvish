@@ -7,6 +7,32 @@
 // hero end //
 
 // progress bar start //
+const skills = [
+    {
+    tittle: 'Development',
+    value: 80
+    },
+    {
+    tittle: 'Html',
+    value: 96
+    },
+    {
+    tittle: 'Photoshop',
+    value: 88
+    },
+    {
+    tittle: 'Css',
+    value: 70
+    },
+    {
+    tittle: 'Wordpress',
+    value: 59
+    },
+    {
+    tittle: 'Asp.net',
+    value: 58
+    }
+]
 // progress bar end //
 
 // our services start //

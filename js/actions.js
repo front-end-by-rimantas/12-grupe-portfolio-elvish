@@ -7,6 +7,7 @@
 // hero end //
 
 // progress bar start //
+ renderSkills( skills );
 // progress bar end //
 
 // our services start //

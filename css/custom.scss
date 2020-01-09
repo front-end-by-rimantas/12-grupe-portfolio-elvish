@@ -13,6 +13,50 @@
 .text-center{
     text-align: center;
 }
+.third-color{
+    color: var(--third-color);
+}
+p{
+    color: var(--third-color);
+    margin: 20px 0;
+    font-size: 18px;
+    
+}
+h3{
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+.bold{
+    font-weight: bold;
+}
+.star{
+    font-size: 50px;
+    line-height: 50px;
+    position: relative;
+    &::before{
+        display: inline-block;
+        content: '';
+        width: 30px;
+        height: 1px;
+        background-color: var(--third-color);
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        
+    }
+    &::after{
+        display: inline-block;
+        content: '';
+        width: 30px;
+        height: 1px;
+        background-color: var(--third-color);
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+    
+}
 
 // header
 
@@ -37,4 +81,3 @@
 // contact me
 
 // footer
-
