@@ -21,7 +21,7 @@ function renderServices(data){
     
         HTML +=  `<div class="services col-4 col-sm-12">
                     <div class="content">
-                        <span>${service.icon}</span>
+                    <i class="fa ${service.icon}" aria-hidden="true"></i>
                         <h5>${service.heading}</h5>
                         <p>${service.par}</p>
                     </div>
