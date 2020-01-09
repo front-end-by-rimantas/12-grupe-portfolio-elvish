@@ -1,0 +1,36 @@
+.hire-me{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ), url(/images/hire-me.jpg);
+    background-position: 0% 50%;
+    object-fit: contain;
+    background-color: black;
+    padding-bottom: 80px !important;
+    padding-top: 20px !important;
+    >.row{
+        h2{
+            color: white;
+            font-size: 45px;
+            
+        }
+        .col-12{
+            margin-top: 35px;
+        }
+        .button{
+            
+            border: 2px solid white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            transition: 0.5s;
+        }
+        .button:hover{
+            color: black;
+            background-color: white;
+        }
+    }
+
+
+}
