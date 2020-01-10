@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../css/testimonials.scss"
+    ],
+    "names": [],
+    "file": "testimonials.css"
+}

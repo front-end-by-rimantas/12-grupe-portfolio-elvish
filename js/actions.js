@@ -7,7 +7,7 @@
 // hero end //
 
 // progress bar start //
- renderSkills( skills );
+renderSkills(skills);
 // progress bar end //
 
 // our services start //
@@ -15,6 +15,7 @@ renderServices(services);
 // our services end //
 
 // achievements start //
+renderAchievements(achievements);
 // achievements end //
 
 // education & experience start //
