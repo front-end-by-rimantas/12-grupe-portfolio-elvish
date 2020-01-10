@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../css/job-history.scss"
+    ],
+    "names": [],
+    "file": "job-history.css"
+}

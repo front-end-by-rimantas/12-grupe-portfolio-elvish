@@ -1,0 +1,64 @@
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.bg-primary-light {
+  background-color: var(--primary-light-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.third-color {
+  color: var(--third-color);
+}
+
+p {
+  color: var(--third-color);
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.star {
+  font-size: 50px;
+  line-height: 50px;
+  position: relative;
+}
+
+.star::before {
+  display: inline-block;
+  content: '';
+  width: 30px;
+  height: 1px;
+  background-color: var(--third-color);
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.star::after {
+  display: inline-block;
+  content: '';
+  width: 30px;
+  height: 1px;
+  background-color: var(--third-color);
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+/*# sourceMappingURL=custom.css.map */
