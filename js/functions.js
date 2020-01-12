@@ -127,6 +127,18 @@ function renderExperience(data) {
 // gallery end //
 
 // partners start //
+function renderPartners(data) {
+    let HTML = '';
+    for(let i = 0; i < data.length; i++){
+        const Partners = data[i]
+
+        HTML += ` <div class="col-2 col-sm-12 inline-block">
+                <img class="logo" src="${Partners.img}">
+             </div>`
+
+             document.querySelector('#partners').innerHTML=HTML;
+    }
+}
 // partners end //
 
 // blog start //

@@ -17,7 +17,9 @@
 .third-color {
   color: var(--third-color);
 }
-
+.inline-block{
+  display: inline-block;
+}
 p {
   color: var(--third-color);
   margin: 20px 0;
@@ -61,3 +63,4 @@ h3 {
   top: 20px;
   right: 30px;
 }
+
