@@ -1,6 +1,6 @@
 @import './reset.css';
 @import './variables.css';
-
+@import './education.css';
 
 @import './font-awesome.css';
 @import './hire-me.css';
@@ -18,5 +18,6 @@
 @import './progress-bars.css';
 @import './testimonials.css';
 @import './services.css';
+@import './footer.css';
 
 @import './custom.css';
