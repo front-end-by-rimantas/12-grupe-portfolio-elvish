@@ -71,12 +71,19 @@ function renderServices(data) {
 function renderAchievements(data) {
     let HTML = '';
 
+    if (!Array.isArray(data)) {
+        return console.error('Duomenu formatas blogas');
+    }
+    if (data.length === 0) {
+        return console.error('Nera duomenu')
+    }
+
     for (let i = 0; i < data.length; i++) {
         const achievements = data[i]
 
         HTML += `<div class="col-3 col-sm-12 achievements">
                     <i class="fa ${achievements.icon}"></i>
-                    <h4>${achievements.amount}</h4>
+                    <h4 class="counterup">${achievements.amount}</h4>
                     <p>${achievements.title}</p>                   
                     </div>`
 
@@ -87,9 +94,9 @@ function renderAchievements(data) {
 // achievements end //
 
 // education & experience start //
-function renderEducation(data){
+function renderEducation(data) {
     let HTML = '';
-    for(let i = 0; i < data.length; i++){
+    for (let i = 0; i < data.length; i++) {
         const education = data[i]
 
         HTML += `<div class="info">
@@ -100,9 +107,9 @@ function renderEducation(data){
         document.querySelector('#education').innerHTML = HTML;
     }
 }
- function renderExperience(data){
+function renderExperience(data) {
     let HTML = '';
-    for(let i = 0; i < data.length; i++){
+    for (let i = 0; i < data.length; i++) {
         const education = data[i]
 
         HTML += `<div class="info">

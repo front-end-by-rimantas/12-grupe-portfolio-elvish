@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/main.css">
+    <!-- achievements section animation -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 </head>
 
 <body class="text-center">
@@ -122,10 +126,10 @@
             </div>
             <div class="row">
                 <div id="education" class="col-5 m-r-2 side col-sm-12 m-l-sm-0">
-                    
+
                 </div>
                 <div id="experience" class="col-5 side col-sm-12">
-                    
+
                 </div>
             </div>
         </div>
@@ -361,13 +365,16 @@
 
         <!-- message form end -->
         <!-- footer start -->
-        <div class="container bg-primary-light">
+        <div id="footer" class="container bg-primary-light">
             <div class="row">
-                <div class="col-3 col-sm-12">
-                    <span class="third-color">2018 C Elvish. Design by theme boss</span>
+                <div class="col-5 col-sm-12">
+                    <p class="third-color">2018 &copy Elvish. Designed by ThemesBoss.</p>
                 </div>
-                <div class="col-3 m-l-6 col-sm-12 m-l-sm-0 third-color">
-                    social links
+                <div id="socials" class="col-4 m-l-3 col-sm-12 m-l-sm-0 third-color">
+                    <i class="fa fa-google-plus"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-facebook"></i>
                 </div>
             </div>
         </div>
@@ -375,6 +382,11 @@
         <script src="./js/data.js"></script>
         <script src="./js/functions.js"></script>
         <script src="./js/actions.js"></script>
+
+        <!-- achievements section animation -->
+        <script type="text/javascript">
+            $(".counterup").counterUp({ time: 2000 });
+        </script>
 </body>
 
 </html>
