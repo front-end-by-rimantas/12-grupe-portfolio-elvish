@@ -107,6 +107,41 @@ const achievements = [
 // achievements end //
 
 // education & experience start //
+const education = [
+    {
+        year: '2010 - 2014',
+        experience: 'Studied At Cambridge University',
+        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+    },
+    {
+        year: '2014 - 2016',
+        experience: 'Master In Computer Science',
+        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+    },
+    {
+        year: '2016 - 2018',
+        experience: 'UI/UX Designer',
+        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+    },
+    
+]
+const experience = [
+    {
+        year: '2010 - 2014',
+        experience: 'Senior Graphic Designer',
+        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+    },
+    {
+        year: '2014 - 2016',
+        experience: 'Web Developer',
+        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+    },
+    {
+        year: '2016 - 2018',
+        experience: 'Freelancer And Themeforest',
+        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+    },
+]
 // education & experience end //
 
 // gallery start //

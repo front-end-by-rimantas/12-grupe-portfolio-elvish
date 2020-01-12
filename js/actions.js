@@ -19,6 +19,8 @@ renderAchievements(achievements);
 // achievements end //
 
 // education & experience start //
+renderEducation(education);
+renderExperience(experience)
 // education & experience end //
 
 // gallery start //

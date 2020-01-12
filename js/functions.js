@@ -87,6 +87,33 @@ function renderAchievements(data) {
 // achievements end //
 
 // education & experience start //
+function renderEducation(data){
+    let HTML = '';
+    for(let i = 0; i < data.length; i++){
+        const education = data[i]
+
+        HTML += `<div class="info">
+        <span class='bold'>${education.year}</span>
+        <h6>${education.experience}</h6>
+        <p>${education.text}</p>
+        </div>`
+        document.querySelector('#education').innerHTML = HTML;
+    }
+}
+ function renderExperience(data){
+    let HTML = '';
+    for(let i = 0; i < data.length; i++){
+        const education = data[i]
+
+        HTML += `<div class="info">
+        <span class='bold'>${education.year}</span>
+        <h6>${education.experience}</h6>
+        <p>${education.text}</p>
+        </div>`
+
+        document.querySelector('#experience').innerHTML = HTML;
+    }
+}
 // education & experience end //
 
 // gallery start //
