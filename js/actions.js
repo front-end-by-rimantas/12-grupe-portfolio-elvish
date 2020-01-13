@@ -27,6 +27,7 @@ renderExperience(experience)
 // gallery end //
 
 // partners start //
+renderPartners(Partners);
 // partners end //
 
 // blog start //
