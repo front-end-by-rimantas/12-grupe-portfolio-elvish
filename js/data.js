@@ -150,22 +150,22 @@ const experience = [
 // partners start //
     const Partners = [
         {
-            img: '../images/partner-1.png'
+            img: './images/partner-1.png'
         },
         {
-            img: '../images/partner-2.png'
+            img: './images/partner-2.png'
          },
          {
-            img: '../images/partner-3.png'
+            img: './images/partner-3.png'
          },
          {
-            img: '../images/partner-4.png'
+            img: './images/partner-4.png'
         },
          {
-            img: '../images/partner-5.png'
+            img: './images/partner-5.png'
          },
          {
-            img: '../images/partner-6.png'
+            img: './images/partner-6.png'
          }
 
     ]
