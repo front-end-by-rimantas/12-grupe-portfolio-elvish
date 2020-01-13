@@ -124,19 +124,73 @@ function renderExperience(data) {
 // education & experience end //
 
 // gallery start //
+function renderGallery(data) {
+    let HTML = '';
+    for (let i = 0; i < data.length; i++) {
+        const galleryPics = data[i]
+
+        HTML += `<div class="col-4 col-sm-12 galleryImg">
+                <img src="${galleryPics.img}" alt="">
+                <div class="overlay"></div>
+                <h4>${galleryPics.title}</h4>
+                <h6>${galleryPics.category}</h6>
+            </div>`
+
+        document.querySelector('.galleryPics').innerHTML = HTML;
+    }
+
+    let uniqueList = [];
+
+    // surenkame visas kategorijas i viena sarasa
+    for (let i = 0; i < data.length; i++) {
+        const subList = data[i].category;
+
+        // atrenkame ir paliekame tik unikalias kategorijas is surinkto saraso
+        for (let i = 0; i < subList.length; i++) {
+            const category = subList[i].toLowerCase();
+
+            if (uniqueList.indexOf(category) === -1) {
+                uniqueList.push(category);
+            }
+        }
+    }
+
+    let htmlFilters = '<div class="filter-item active-filter">All</div>';
+    for (let i = 0; i < uniqueList.length; i++) {
+        htmlFilters += `<div class="filter-item">${uniqueList[i]}</div>`;
+    }
+
+    document.querySelector(".filters").innerHTML = htmlFilters;
+
+    //****************Add event listeners on the filter****************** */
+    const filtItems = document.querySelectorAll(".filter-item");
+
+
+    for (let i = 0; i < filtItems.length; i++) {
+        filtItems[i].addEventListener("click", (e) => {
+            if (e.target.class !== "active-filter") {
+                e.target.classList.add("active-filter");
+            }
+        })
+    }
+
+}
+
+
+
 // gallery end //
 
 // partners start //
 function renderPartners(data) {
     let HTML = '';
-    for(let i = 0; i < data.length; i++){
+    for (let i = 0; i < data.length; i++) {
         const Partners = data[i]
 
         HTML += ` <div class="col-2 col-sm-12 inline-block">
                 <img class="logo" src="${Partners.img}">
              </div>`
 
-             document.querySelector('#partners').innerHTML=HTML;
+        document.querySelector('#partners').innerHTML = HTML;
     }
 }
 // partners end //

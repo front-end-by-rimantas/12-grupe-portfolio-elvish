@@ -24,6 +24,7 @@ renderExperience(experience)
 // education & experience end //
 
 // gallery start //
+renderGallery(works)
 // gallery end //
 
 // partners start //
