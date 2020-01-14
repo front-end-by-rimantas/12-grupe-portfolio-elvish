@@ -168,12 +168,12 @@ function renderGallery(data) {
 
     for (let i = 0; i < filtItems.length; i++) {
         filtItems[i].addEventListener("click", (e) => {
-            if (e.target.class !== "active-filter") {
-                e.target.classList.add("active-filter");
-            }
+            let selected = document.querySelector(".active-filter");
+            selected.classList.remove("active-filter");
+            e.target.classList.add("active-filter");
+            selected = e.target;
         })
     }
-
 }
 
 
