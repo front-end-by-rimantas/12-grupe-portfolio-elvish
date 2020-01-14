@@ -147,32 +147,32 @@ const experience = [
 // gallery start //
 const works = [
     {
-        img: '../images/gallery-5.png',
+        img: './images/gallery-5.png',
         title: '404 page',
         category: ['HTML', 'CSS']
     },
     {
-        img: '../images/gallery-3.png',
+        img: './images/gallery-3.png',
         title: '404 page',
         category: ['HTML', 'CSS']
     },
     {
-        img: '../images/gallery-6.png',
+        img: './images/gallery-6.png',
         title: 'Sign up',
         category: ['HTML', 'CSS']
     },
     {
-        img: '../images/gallery-1.png',
+        img: './images/gallery-1.png',
         title: 'Coming soon',
         category: ['HTML', 'CSS', 'RESPONSIVE']
     },
     {
-        img: '../images/gallery-2.png',
+        img: './images/gallery-2.png',
         title: 'Facebook',
         category: ['HTML', 'CSS', 'JAVASCRIPT']
     },
     {
-        img: '../images/gallery-4.png',
+        img: './images/gallery-4.png',
         title: 'Portfolio',
         category: ['HTML', 'SCSS', 'JAVASCRIPT', 'RESPONSIVE']
     }
@@ -180,26 +180,26 @@ const works = [
 // gallery end //
 
 // partners start //
-    const Partners = [
-        {
-            img: './images/partner-1.png'
-        },
-        {
-            img: './images/partner-2.png'
-         },
-         {
-            img: './images/partner-3.png'
-         },
-         {
-            img: './images/partner-4.png'
-        },
-         {
-            img: './images/partner-5.png'
-         },
-         {
-            img: './images/partner-6.png'
-         }
-    ]
+const Partners = [
+    {
+        img: './images/partner-1.png'
+    },
+    {
+        img: './images/partner-2.png'
+    },
+    {
+        img: './images/partner-3.png'
+    },
+    {
+        img: './images/partner-4.png'
+    },
+    {
+        img: './images/partner-5.png'
+    },
+    {
+        img: './images/partner-6.png'
+    }
+]
 // partners end //
 
 // blog start //

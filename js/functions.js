@@ -132,8 +132,8 @@ function renderGallery(data) {
         HTML += `<div class="col-4 col-sm-12 galleryImg">
                 <img src="${galleryPics.img}" alt="">
                 <div class="overlay"></div>
-                <h4>${galleryPics.title}</h4>
-                <h6>${galleryPics.category}</h6>
+                <h4 class="picTitle">${galleryPics.title}</h4>
+                <h6 class="picCategory">${galleryPics.category}</h6>
             </div>`
 
         document.querySelector('.galleryPics').innerHTML = HTML;
@@ -157,7 +157,7 @@ function renderGallery(data) {
 
     let htmlFilters = '<div class="filter-item active-filter">All</div>';
     for (let i = 0; i < uniqueList.length; i++) {
-        htmlFilters += `<div class="filter-item">${uniqueList[i]}</div>`;
+        htmlFilters += `<p class="filter-star">*</p><div class="filter-item">${uniqueList[i]}</div>`;
     }
 
     document.querySelector(".filters").innerHTML = htmlFilters;
