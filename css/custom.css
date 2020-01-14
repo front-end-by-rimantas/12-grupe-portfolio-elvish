@@ -9,6 +9,9 @@
 .bg-primary-light {
   background-color: var(--primary-light-color);
 }
+.padding-top{
+  padding: 40px 0;
+}
 
 .text-center {
   text-align: center;
