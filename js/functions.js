@@ -132,8 +132,8 @@ function renderGallery(data) {
         HTML += `<div class="col-4 col-sm-12 galleryImg">
                 <img src="${galleryPics.img}" alt="">
                 <div class="overlay"></div>
-                <h4>${galleryPics.title}</h4>
-                <h6>${galleryPics.category}</h6>
+                <h4 class="picTitle">${galleryPics.title}</h4>
+                <h6 class="picCategory">${galleryPics.category}</h6>
             </div>`
 
         document.querySelector('.galleryPics').innerHTML = HTML;
@@ -157,20 +157,22 @@ function renderGallery(data) {
 
     let htmlFilters = '<div class="filter-item active-filter">All</div>';
     for (let i = 0; i < uniqueList.length; i++) {
-        htmlFilters += `<div class="filter-item">${uniqueList[i]}</div>`;
+        htmlFilters += `<p class="filter-star">*</p><div class="filter-item">${uniqueList[i]}</div>`;
     }
 
     document.querySelector(".filters").innerHTML = htmlFilters;
 
     //****************Add event listeners on the filter****************** */
     const filtItems = document.querySelectorAll(".filter-item");
+    const galleryItems = document.querySelectorAll('.galleryImg');
 
 
     for (let i = 0; i < filtItems.length; i++) {
         filtItems[i].addEventListener("click", (e) => {
-            if (e.target.class !== "active-filter") {
-                e.target.classList.add("active-filter");
-            }
+            let selected = document.querySelector(".active-filter");
+            selected.classList.remove("active-filter");
+            e.target.classList.add("active-filter");
+            selected = e.target;
         })
     }
 
