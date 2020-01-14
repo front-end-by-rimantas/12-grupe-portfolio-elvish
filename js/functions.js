@@ -1,7 +1,31 @@
 "use strict";
 
 // header start //
+window.onscroll = function() {myFunction()};
 
+
+const header = document.getElementById("myHeader");
+const circle = document.getElementsByClassName("circle");
+const menu = document.getElementsByClassName("link")
+
+
+const fixed = header.offsetTop;
+
+
+
+
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 0) {
+       $('#myHeader').addClass('fixed');
+       $('#myHeader').removeClass('pad');
+       $('circle').addClass('circles');
+       $('circle').removeClass('circle');
+    } else {
+        $('#myHeader').addClass('pad');
+       $('#myHeader').removeClass('fixed');
+    }
+});
 // header end //
 
 // hero start //
