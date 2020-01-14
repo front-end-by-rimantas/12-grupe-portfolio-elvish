@@ -164,6 +164,7 @@ function renderGallery(data) {
 
     //****************Add event listeners on the filter****************** */
     const filtItems = document.querySelectorAll(".filter-item");
+    const galleryItems = document.querySelectorAll('.galleryImg');
 
 
     for (let i = 0; i < filtItems.length; i++) {
@@ -174,6 +175,7 @@ function renderGallery(data) {
             selected = e.target;
         })
     }
+
 }
 
 
