@@ -27,6 +27,9 @@ renderExperience(experience)
 renderGallery(works)
 // gallery end //
 
+// testimonials start //
+// testimonials end //
+
 // partners start //
 renderPartners(Partners);
 // partners end //
