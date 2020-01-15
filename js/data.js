@@ -179,6 +179,9 @@ const works = [
 ]
 // gallery end //
 
+// testimonials start //
+// testimonials end //
+
 // partners start //
 const Partners = [
     {

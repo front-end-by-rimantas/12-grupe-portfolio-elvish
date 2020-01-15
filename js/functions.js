@@ -203,10 +203,10 @@ function renderGallery(data) {
     }
     return;
 }
-
-
-
 // gallery end //
+
+// testimonials start //
+// testimonials end //
 
 // partners start //
 function renderPartners(data) {
@@ -225,3 +225,16 @@ function renderPartners(data) {
 
 // blog start //
 // blog end //
+
+//back to top//
+const backToTopBtn = document.querySelector(".fa-angle-up");
+backToTopBtn.style.display = "none";
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= 200) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+})
+//back to top
