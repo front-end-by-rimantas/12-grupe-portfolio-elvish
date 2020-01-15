@@ -129,7 +129,7 @@ function renderGallery(data) {
     for (let i = 0; i < data.length; i++) {
         const galleryPics = data[i]
 
-        HTML += `<div class="col-4 col-sm-12 galleryImg">
+        HTML += `<div class="col-4 col-sm-12 galleryImg" data-categories="${('' + galleryPics.category).toLowerCase()}">
                 <img src="${galleryPics.img}" alt="">
                 <div class="overlay"></div>
                 <h4 class="picTitle">${galleryPics.title}</h4>
@@ -176,6 +176,32 @@ function renderGallery(data) {
         })
     }
 
+    for (let i = 0; i < filtItems.length; i++) {
+        // pridedam event listenerius
+        filtItems[i].addEventListener('click', (event) => {
+            // suzinome kas buvo paspaustas
+            const findWhat = event.target.textContent;
+            if (findWhat === 'All') {
+                for (let w = 0; w < galleryItems.length; w++) {
+                    const work = galleryItems[w];
+                    work.style.display = "block";
+                }
+            } else {
+                // ieskome kuriuose gallery-item elementuose yra paminetas findWhat
+                for (let w = 0; w < galleryItems.length; w++) {
+                    const work = galleryItems[w];
+                    const categories = work.dataset.categories;
+
+                    if (categories.indexOf(findWhat) >= 0) {
+                        work.style.display = "block";
+                    } else {
+                        work.style.display = "none";
+                    }
+                }
+            }
+        })
+    }
+    return;
 }
 
 
