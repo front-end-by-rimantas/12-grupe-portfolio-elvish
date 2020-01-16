@@ -1,31 +1,83 @@
 "use strict";
 
 // header start //
-window.onscroll = function() {myFunction()};
-
-
-const header = document.getElementById("myHeader");
-const circle = document.getElementsByClassName("circle");
-const menu = document.getElementsByClassName("link")
-
-
-const fixed = header.offsetTop;
 
 
 
 
 
-$(window).scroll(function(){
-    if ($(this).scrollTop() > 0) {
-       $('#myHeader').addClass('fixed');
-       $('#myHeader').removeClass('pad');
-       $('circle').addClass('circles');
-       $('circle').removeClass('circle');
-    } else {
-        $('#myHeader').addClass('pad');
-       $('#myHeader').removeClass('fixed');
-    }
-});
+
+// $(window).scroll(function(){
+//     if ($(this).scrollTop() > 0) {
+//         $('#padding').addClass('padding');
+//         $('#myHeader').addClass('fixed');
+//         $('#myHeader').removeClass('pad');      
+//         $('.circle').addClass('circles');
+//         // $('.link').addClass('links');
+       
+//     } else {
+//         $('#padding').removeClass('padding');
+//         $('#myHeader').addClass('pad');
+//         $('#myHeader').removeClass('fixed');
+//         $('.circle').removeClass('circles');
+//         // $('.link').removeClass('links');
+//     }
+// });
+   
+
+    window.addEventListener('scroll', () =>{
+        const circle = document.getElementsByClassName("circle");
+        const logo = document.getElementById("elvish");
+        const link = document.getElementsByClassName("link");
+        const fixed = document.getElementById('myHeader');
+        const padding = document.getElementById('padding');
+        if (window.scrollY > 0){
+            for (let i = 0; i<link.length; i++){
+                link[i].style.color = ('black')
+                
+            }
+            fixed.classList.add('fixed');
+            for (let i = 0; i<circle.length; i++){
+                circle[i].style.background = ('black');
+                console.log(circle[i])
+            }
+            
+            logo.style.color = ('black')
+            padding.style.paddingTop = ('144px')
+            
+        }else{
+            fixed.classList.remove('fixed');
+            for (let i = 0; i<circle.length; i++){
+                circle[i].style.background = ('white');
+                
+            }
+            for (let i = 0; i<link.length; i++){
+                link[i].style.color = ('white')
+                
+            }
+            logo.style.color = ('white')
+            padding.style.paddingTop = ('80px')
+        }
+    })
+
+   
+
+
+   
+
+
+// var scrollPosY = window.pageYOffset | document.body.scrollTop;
+// var link = document.getElementsByClassName("link")
+
+// if (scrollPosY > 0){
+//     for (let i; i < link.length; i++){
+//         link[i].className = ('links');
+//     }
+// }else{
+//     for (let i; i < link.length; i++){
+//         link[i].className = ('link');
+//     }
+// }
 // header end //
 
 // hero start //

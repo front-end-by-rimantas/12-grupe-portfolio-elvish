@@ -67,27 +67,22 @@ h3 {
   font-size: 36px;
   text-decoration: none;
   color: white;
-}
-
-.fixed {
-  background-color: gray;
-  color: black;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-}
-
-.circles {
-  background-color: black;
-}
-
-.links {
-  color: black;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .pad {
   padding: 0;
-  background-color: burlywood;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.fixed {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  padding: 0;
 }
 
 .marg {
@@ -127,6 +122,8 @@ h3 {
   font-size: 16px;
   margin-bottom: 15px;
   color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .nav:hover > .circle {
