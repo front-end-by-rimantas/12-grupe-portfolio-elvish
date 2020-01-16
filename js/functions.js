@@ -41,7 +41,7 @@
                 circle[i].style.background = ('black');
                 console.log(circle[i])
             }
-            
+            fixed.style.boxShadow = ('0px 1px 10px #e6e6e6')
             logo.style.color = ('black')
             padding.style.paddingTop = ('144px')
             
@@ -55,6 +55,7 @@
                 link[i].style.color = ('white')
                 
             }
+            fixed.style.boxShadow = ('none')
             logo.style.color = ('white')
             padding.style.paddingTop = ('80px')
         }
