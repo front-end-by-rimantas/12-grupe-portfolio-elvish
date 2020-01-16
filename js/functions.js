@@ -30,7 +30,6 @@
         const logo = document.getElementById("elvish");
         const link = document.getElementsByClassName("link");
         const fixed = document.getElementById('myHeader');
-        const padding = document.getElementById('padding');
         if (window.scrollY > 0){
             for (let i = 0; i<link.length; i++){
                 link[i].style.color = ('black')
@@ -43,7 +42,6 @@
             }
             fixed.style.boxShadow = ('0px 1px 10px #e6e6e6')
             logo.style.color = ('black')
-            padding.style.paddingTop = ('144px')
             
         }else{
             fixed.classList.remove('fixed');
@@ -57,7 +55,6 @@
             }
             fixed.style.boxShadow = ('none')
             logo.style.color = ('white')
-            padding.style.paddingTop = ('80px')
         }
     })
 
