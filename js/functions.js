@@ -1,30 +1,6 @@
 "use strict";
 
 // header start //
-
-
-
-
-
-
-// $(window).scroll(function(){
-//     if ($(this).scrollTop() > 0) {
-//         $('#padding').addClass('padding');
-//         $('#myHeader').addClass('fixed');
-//         $('#myHeader').removeClass('pad');      
-//         $('.circle').addClass('circles');
-//         // $('.link').addClass('links');
-       
-//     } else {
-//         $('#padding').removeClass('padding');
-//         $('#myHeader').addClass('pad');
-//         $('#myHeader').removeClass('fixed');
-//         $('.circle').removeClass('circles');
-//         // $('.link').removeClass('links');
-//     }
-// });
-   
-
     window.addEventListener('scroll', () =>{
         const circle = document.getElementsByClassName("circle");
         const logo = document.getElementById("elvish");
@@ -57,25 +33,6 @@
             logo.style.color = ('white')
         }
     })
-
-   
-
-
-   
-
-
-// var scrollPosY = window.pageYOffset | document.body.scrollTop;
-// var link = document.getElementsByClassName("link")
-
-// if (scrollPosY > 0){
-//     for (let i; i < link.length; i++){
-//         link[i].className = ('links');
-//     }
-// }else{
-//     for (let i; i < link.length; i++){
-//         link[i].className = ('link');
-//     }
-// }
 // header end //
 
 // hero start //
