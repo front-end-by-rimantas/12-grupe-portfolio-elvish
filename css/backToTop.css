@@ -1,0 +1,9 @@
+.fa-angle-up {
+    background-color: #000;
+    color: var(--primary-light-color);
+    padding: 10px 12px;
+    border-radius: 8%;
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+}

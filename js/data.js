@@ -147,59 +147,79 @@ const experience = [
 // gallery start //
 const works = [
     {
-        img: '../images/gallery-5.png',
-        title: '404 page',
+        img: './images/gallery-1.jpg',
+        title: 'Studio & Art',
         category: ['HTML', 'CSS']
     },
     {
-        img: '../images/gallery-3.png',
-        title: '404 page',
+        img: './images/gallery-2.jpg',
+        title: 'Creative & Art',
         category: ['HTML', 'CSS']
     },
     {
-        img: '../images/gallery-6.png',
-        title: 'Sign up',
+        img: './images/gallery-3.jpg',
+        title: 'Open Imagination',
         category: ['HTML', 'CSS']
     },
     {
-        img: '../images/gallery-1.png',
-        title: 'Coming soon',
+        img: './images/gallery-4.jpg',
+        title: 'Locked Steel Gate',
         category: ['HTML', 'CSS', 'RESPONSIVE']
     },
     {
-        img: '../images/gallery-2.png',
-        title: 'Facebook',
+        img: './images/gallery-5.jpg',
+        title: 'Mac Sunglasses',
         category: ['HTML', 'CSS', 'JAVASCRIPT']
     },
     {
-        img: '../images/gallery-4.png',
-        title: 'Portfolio',
+        img: './images/gallery-6.jpg',
+        title: 'Backpack Contents',
         category: ['HTML', 'SCSS', 'JAVASCRIPT', 'RESPONSIVE']
     }
 ]
 // gallery end //
 
+// testimonials start //
+const testimonials = [
+    {
+        name: "Kirk McFall",
+        company: "Google",
+        review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis similique earum facere rerum animi architecto rem eveniet ab consequuntur."
+    },
+    {
+        name: "Edward Evans",
+        company: "Google",
+        review: "Lorem, ipsum dolor sit amet. Magnam corporis similique earum facere rerum animi architecto rem eveniet ab consequuntur."
+    },
+    {
+        name: "Antonio Hernandez",
+        company: "Google",
+        review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis similique earum facere rerum animi architecto rem eveniet ab consequuntur. Lorem, ipsum dolor sit amet."
+    }
+]
+// testimonials end //
+
 // partners start //
-    const Partners = [
-        {
-            img: './images/partner-1.png'
-        },
-        {
-            img: './images/partner-2.png'
-         },
-         {
-            img: './images/partner-3.png'
-         },
-         {
-            img: './images/partner-4.png'
-        },
-         {
-            img: './images/partner-5.png'
-         },
-         {
-            img: './images/partner-6.png'
-         }
-    ]
+const Partners = [
+    {
+        img: './images/partner-1.png'
+    },
+    {
+        img: './images/partner-2.png'
+    },
+    {
+        img: './images/partner-3.png'
+    },
+    {
+        img: './images/partner-4.png'
+    },
+    {
+        img: './images/partner-5.png'
+    },
+    {
+        img: './images/partner-6.png'
+    }
+]
 // partners end //
 
 // blog start //
