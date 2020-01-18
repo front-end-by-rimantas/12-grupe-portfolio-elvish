@@ -179,6 +179,26 @@ const works = [
 ]
 // gallery end //
 
+// testimonials start //
+const testimonials = [
+    {
+        name: "Kirk McFall",
+        company: "Google",
+        review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis similique earum facere rerum animi architecto rem eveniet ab consequuntur."
+    },
+    {
+        name: "Edward Evans",
+        company: "Google",
+        review: "Lorem, ipsum dolor sit amet. Magnam corporis similique earum facere rerum animi architecto rem eveniet ab consequuntur."
+    },
+    {
+        name: "Antonio Hernandez",
+        company: "Google",
+        review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis similique earum facere rerum animi architecto rem eveniet ab consequuntur. Lorem, ipsum dolor sit amet."
+    }
+]
+// testimonials end //
+
 // partners start //
 const Partners = [
     {

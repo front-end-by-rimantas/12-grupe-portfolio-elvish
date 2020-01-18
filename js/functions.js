@@ -129,7 +129,7 @@ function renderGallery(data) {
     for (let i = 0; i < data.length; i++) {
         const galleryPics = data[i]
 
-        HTML += `<div class="col-4 col-sm-12 galleryImg">
+        HTML += `<div class="col-4 col-sm-12 galleryImg" data-categories="${('' + galleryPics.category).toLowerCase()}">
                 <img src="${galleryPics.img}" alt="">
                 <div class="overlay"></div>
                 <h4 class="picTitle">${galleryPics.title}</h4>
@@ -176,11 +176,72 @@ function renderGallery(data) {
         })
     }
 
+    for (let i = 0; i < filtItems.length; i++) {
+        // pridedam event listenerius
+        filtItems[i].addEventListener('click', (event) => {
+            // suzinome kas buvo paspaustas
+            const findWhat = event.target.textContent;
+            if (findWhat === 'All') {
+                for (let w = 0; w < galleryItems.length; w++) {
+                    const work = galleryItems[w];
+                    work.style.display = "block";
+                }
+            } else {
+                // ieskome kuriuose gallery-item elementuose yra paminetas findWhat
+                for (let w = 0; w < galleryItems.length; w++) {
+                    const work = galleryItems[w];
+                    const categories = work.dataset.categories;
+
+                    if (categories.indexOf(findWhat) >= 0) {
+                        work.style.display = "block";
+                    } else {
+                        work.style.display = "none";
+                    }
+                }
+            }
+        })
+    }
+    return;
 }
-
-
-
 // gallery end //
+
+// testimonials start //
+function renderTestimonials(data) {
+    let HTML = '';
+    for (let i = 0; i < data.length; i++) {
+        const testimonials = data[i];
+
+        HTML += `<div class="col-6 testimonial">
+                <i class="fa fa-user-circle-o"></i>
+                <h4>${testimonials.name}</h4>
+                <span>${testimonials.company}</span>
+                <p>${testimonials.review}</p>
+                </div>`
+
+
+        document.querySelector(".testimonial").innerHTML = HTML;
+    }
+    const bar1 = document.querySelector(".bar1");
+    const bar2 = document.querySelector(".bar2");
+    const bar3 = document.querySelector(".bar3");
+
+    bar1.addEventListener("click", () => {
+        bar2.classList.remove("activeBar");
+        bar3.classList.remove("activeBar");
+        bar1.classList.add("activeBar");
+    })
+    bar2.addEventListener("click", () => {
+        bar1.classList.remove("activeBar");
+        bar3.classList.remove("activeBar");
+        bar2.classList.add("activeBar");
+    })
+    bar3.addEventListener("click", () => {
+        bar1.classList.remove("activeBar");
+        bar2.classList.remove("activeBar");
+        bar3.classList.add("activeBar");
+    })
+}
+// testimonials end //
 
 // partners start //
 function renderPartners(data) {
@@ -199,3 +260,16 @@ function renderPartners(data) {
 
 // blog start //
 // blog end //
+
+//back to top//
+const backToTopBtn = document.querySelector(".fa-angle-up");
+backToTopBtn.style.display = "none";
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= 200) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+})
+//back to top
