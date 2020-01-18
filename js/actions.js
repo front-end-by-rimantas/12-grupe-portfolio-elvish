@@ -28,6 +28,7 @@ renderGallery(works)
 // gallery end //
 
 // testimonials start //
+renderTestimonials(testimonials);
 // testimonials end //
 
 // partners start //

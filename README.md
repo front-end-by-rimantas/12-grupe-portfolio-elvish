@@ -13,4 +13,4 @@ Site published at https://front-end-by-rimantas.github.io/12-grupe-portfolio-elv
 Design: [elvish template](http://themesboss.com/elvish/index_6.html)
 
 ### Authors
-[Aivaras](https://github.com/belauzas), [Edvinas](https://github.com/belauzas), [Povilas](https://github.com/selmiukstis)
+[Aivaras](https://github.com/belauzas), [Edvinas](https://github.com/belauzas), [Povilas](https://github.com/PovilasGin)

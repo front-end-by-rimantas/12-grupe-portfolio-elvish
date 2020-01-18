@@ -206,6 +206,41 @@ function renderGallery(data) {
 // gallery end //
 
 // testimonials start //
+function renderTestimonials(data) {
+    let HTML = '';
+    for (let i = 0; i < data.length; i++) {
+        const testimonials = data[i];
+
+        HTML += `<div class="col-6 testimonial">
+                <i class="fa fa-user-circle-o"></i>
+                <h4>${testimonials.name}</h4>
+                <span>${testimonials.company}</span>
+                <p>${testimonials.review}</p>
+                </div>`
+
+
+        document.querySelector(".testimonial").innerHTML = HTML;
+    }
+    const bar1 = document.querySelector(".bar1");
+    const bar2 = document.querySelector(".bar2");
+    const bar3 = document.querySelector(".bar3");
+
+    bar1.addEventListener("click", () => {
+        bar2.classList.remove("activeBar");
+        bar3.classList.remove("activeBar");
+        bar1.classList.add("activeBar");
+    })
+    bar2.addEventListener("click", () => {
+        bar1.classList.remove("activeBar");
+        bar3.classList.remove("activeBar");
+        bar2.classList.add("activeBar");
+    })
+    bar3.addEventListener("click", () => {
+        bar1.classList.remove("activeBar");
+        bar2.classList.remove("activeBar");
+        bar3.classList.add("activeBar");
+    })
+}
 // testimonials end //
 
 // partners start //
