@@ -259,6 +259,11 @@ function renderPartners(data) {
 // partners end //
 
 // blog start //
+$('#videoLink')
+.magnificPopup({
+	  type:'inline',
+	  midClick: true
+  })
 // blog end //
 
 //back to top//
