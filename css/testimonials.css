@@ -1,7 +1,9 @@
 /* No CSS */
 .clients {
     color: #fff;
-    background-color: #444;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/testimonials.jpg);
+      background-size: cover;
+
 }
 .client {
     margin-bottom: 50px;
@@ -15,7 +17,7 @@
     margin: auto;
     overflow: hidden;
 }
-.testimonial {
+.big {
     display: flex;
     width: 300%;
 }
