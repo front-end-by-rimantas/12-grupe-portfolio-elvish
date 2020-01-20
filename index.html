@@ -275,9 +275,10 @@
                     <a href="#videoStory" id="videoLink" class="play" >
                         <i class="fa fa-play" aria-hidden="true"></i>
                     </a>
-                    <div id="videoStory" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
-                        <iframe src="https://player.vimeo.com/video/99025203?title=0&byline=0&portrait=0&badge=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                    </div>
+                </div>
+                <div id="videoStory" class="mfp-hide" style="margin: 0 auto;">
+                    <span class="close">&times;</span>
+                    <iframe src="https://player.vimeo.com/video/99025203?title=0&byline=0&portrait=0&badge=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
                 <div class="texts">
                     <h2>There are many variations</h2>
@@ -290,8 +291,14 @@
                 
             </div>
             <div class="blogs col-4 col-sm-12">
-                <div>
-                    <img src="/IMG/blog-3.jpg" alt="">
+                <div class="carousel">
+                    <img class="slides" src="/IMG/blog-3.jpg" alt="">
+                    <img class="slides" src="/IMG/blog-4.jpg" alt="">
+                    <img class="slides" src="/IMG/blog-5.jpg" alt="">
+                    <div onclick="plusDivs(-1)" class="left"></i>
+                    </div>
+                    <div onclick="plusDivs(+1)" class="right"></i>
+                    </div>
                 </div>
                 <div class="texts">
                     <h2>There are many variations</h2>
