@@ -224,18 +224,49 @@ function renderTestimonials(data) {
     const bar1 = document.querySelector(".bar1");
     const bar2 = document.querySelector(".bar2");
     const bar3 = document.querySelector(".bar3");
+    const testContainer = document.querySelector(".big")
 
     bar1.addEventListener("click", () => {
+        //griztam i pradini taska
+        if (bar3.classList.contains("activeBar")) {
+            testContainer.style.transition = "transform 3s ease-in-out";
+            testContainer.style.transform = "translateX(0%)";
+        }
+        //griztam i pradini taska
+        if (bar2.classList.contains("activeBar")) {
+            testContainer.style.transition = "transform 1.5s ease-in-out";
+            testContainer.style.transform = "translateX(0%)";
+        }
         bar2.classList.remove("activeBar");
         bar3.classList.remove("activeBar");
         bar1.classList.add("activeBar");
     })
     bar2.addEventListener("click", () => {
+        //move div i desine per trecdali
+        if (bar1.classList.contains("activeBar")) {
+            testContainer.style.transition = "transform 1.5s ease-in-out";
+            testContainer.style.transform = "translateX(-33.3%)";
+        }
+        //move div i kaire per trecdali
+        if (bar3.classList.contains("activeBar")) {
+            testContainer.style.transition = "transform 1.5s ease-in-out";
+            testContainer.style.transform = "translateX(-33.3%)";
+        }
         bar1.classList.remove("activeBar");
         bar3.classList.remove("activeBar");
         bar2.classList.add("activeBar");
     })
     bar3.addEventListener("click", () => {
+        //move div i gala
+        if (bar1.classList.contains("activeBar")) {
+            testContainer.style.transition = "transform 3s ease-in-out";
+            testContainer.style.transform = "translateX(-66.7%)";
+        }
+        //move div i gala
+        if (bar2.classList.contains("activeBar")) {
+            testContainer.style.transition = "transform 1.5s ease-in-out";
+            testContainer.style.transform = "translateX(-66.7%)";
+        }
         bar1.classList.remove("activeBar");
         bar2.classList.remove("activeBar");
         bar3.classList.add("activeBar");
