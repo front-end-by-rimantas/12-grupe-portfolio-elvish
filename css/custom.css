@@ -20,9 +20,7 @@
 .third-color {
   color: var(--third-color);
 }
-.inline-block{
-  display: inline-block;
-}
+
 p {
   color: var(--third-color);
   margin: 20px 0;
@@ -67,3 +65,71 @@ h3 {
   right: 30px;
 }
 
+.elvish {
+  float: left;
+  font-size: 36px;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.pad {
+  padding: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  position: fixed;
+}
+
+.fixed {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  padding: 0;
+}
+
+.marg {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.header {
+  padding: 10px;
+}
+
+.menu {
+  display: inline-block;
+  float: right;
+}
+
+.menu .nav {
+  display: inline-block;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.menu .nav .circle {
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.menu .nav a {
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.nav:hover > .circle {
+  opacity: 1;
+}
