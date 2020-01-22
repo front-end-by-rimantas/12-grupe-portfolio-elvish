@@ -3,6 +3,7 @@
     .row{
         .blogs{
             position: relative;
+            margin-top: 30px;
             .play{
                 position: absolute;
                 left: 50%;
@@ -51,8 +52,8 @@
   }
   .close {
     position: absolute;
-    top: 55px;
-    right: 350px;
+    top: 5px;
+    right: 25px;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
@@ -91,6 +92,7 @@
         width: 10px;
         height: 10px;
         transform: rotate(45deg);
+        cursor: pointer;
     }
     .right{
         position: absolute;
@@ -101,5 +103,6 @@
         width: 10px;
         height: 10px;
         transform: rotate(-45deg);
+        cursor: pointer;
     }
 }

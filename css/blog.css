@@ -4,6 +4,7 @@
 
 .blog .row .blogs {
   position: relative;
+  margin-top: 30px;
 }
 
 .blog .row .blogs .play {
@@ -77,8 +78,8 @@
 
 .close {
   position: absolute;
-  top: 55px;
-  right: 350px;
+  top: 5px;
+  right: 25px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
@@ -126,6 +127,7 @@
   height: 10px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  cursor: pointer;
 }
 
 .carousel .right {
@@ -138,4 +140,5 @@
   height: 10px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  cursor: pointer;
 }

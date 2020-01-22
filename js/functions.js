@@ -277,8 +277,10 @@ span.onclick = function() {
 var slideIndex = 1;
 showDivs(slideIndex);
 
+
 function plusDivs(n) {
   showDivs(slideIndex += n);
+  
 }
 
 function showDivs(n) {
@@ -290,7 +292,9 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "block";
+  
 }
+
 // blog end //
 
 //back to top//
