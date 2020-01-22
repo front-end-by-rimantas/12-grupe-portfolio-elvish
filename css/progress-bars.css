@@ -107,3 +107,23 @@
     width: 100%;
   }
 }
+
+@media (max-width: 1000px) {
+  .progress-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .progress-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .middle::after {
+    display: none;
+  }
+  .middle::before {
+    display: none;
+  }
+}
