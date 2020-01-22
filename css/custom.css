@@ -61,3 +61,11 @@ h3 {
   top: 20px;
   right: 30px;
 }
+
+.padding-top {
+  padding: 40px 0;
+}
+
+.inline-block {
+  display: inline-block;
+}
