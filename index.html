@@ -15,10 +15,46 @@
 
 <body class="text-center">
     <!-- header start -->
-    <header class="container text-center">
-        <div class="row">
-            <div class="col-12">
-                header
+    <header id="myHeader"class="container pad text-center">
+        <div class="row marg">
+            <div class="col-12 header">
+                
+                    <a id="elvish" href="" class="bold elvish col-5">Elvish</a>
+                    <nav class="col-7 menu">
+                        <div class="nav">
+                            <a class="link" href="">Home</a>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="nav">
+                            <a class="link" href="">About</a>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="nav">
+                            <a class="link" href="">Services</a>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="nav">
+                            <a class="link" href="">Education</a>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="nav">
+                            <a class="link" href="">Work</a>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="nav">
+                            <a class="link" href="">Client</a>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="nav">
+                            <a class="link" href="">Blog</a>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="nav">
+                            <a class="link" href="">Contact</a>
+                            <div class="circle"></div>
+                        </div>
+                    </nav>
+                
             </div>
         </div>
     </header>
@@ -287,53 +323,72 @@
     <!-- blog end -->
 
     <!-- message form start -->
-    <div class="container padding-top">
+    <div class="container padding-top" id="message-form">
         <div class="row">
             <div class="col-6 m-l-3 col-sm-12 m-l-sm-0">
-                <h3> Get in <span class="bold">tuch</span></h3>
+                <h3> Get in <span class="bold">touch</span></h3>
                 <span class="star">*</span>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci sunt facilis eos iure quaerat
                     culpa reprehenderit doloribus impedit.</p>
             </div>
         </div>
         <div class="row">
-            <div class="left col-4 col-sm-12">
-                <div>
-                    <i>icon</i>
-                    <h4>call us on</h4>
-                    <span class="third-color">+9851237856</span>
+            <div class="col-4">
+                <div class="phone">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <h4>Call Us On</h4>
+                    <p>+985 123 7856</p>
                 </div>
-                <div>
-                    <i>icon</i>
-                    <h4>call us on</h4>
-                    <span class="third-color">+9851237856</span>
+                <div class="email-us">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <h4>Email Us At</h4>
+                    <p>example@gmail.com</p>
                 </div>
-                <div>
-                    <i>icon</i>
-                    <h4>call us on</h4>
-                    <span class="third-color">+9851237856</span>
+                <div class="address">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <h4>Visit Office</h4>
+                    <p>202, Grasselli Street, Conway</p>
                 </div>
             </div>
-            <div class="col-4 col-sm-12">
-                <h4>name</h4>
-                <input type="name" placeholder="Your name...">
-            </div>
-            <div class="col-4 col-sm-12">
-                <h4>name</h4>
-                <input type="name" placeholder="Your name...">
-            </div>
-            <div class="col-8 col-sm-12">
-                <h4>Subject</h4>
-                <input type="subject" placeholder="Your object...">
-            </div>
-            <div class="col-8 col-sm-12">
-                <h4>Message</h4>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div class="col-8 m-l-4 col-sm-12 m-l-sm-0">
-                <button>Send message</button>
+          
+            <div class="col-8">
+                <div class="name-email">
+                    <div class="contact-name col-4" style="
+                    margin-right: 10px;
+                    width: 48%;
+                    ">
+                        <form>
+                        <label for="name">Name</label>
+                        <input name="name" type="text" placeholder="Your name...">
+                        </form> 
+                    </div>
+                    <div class="contact-email col-4" style="
+                    width: 48%;
+                    margin-left: 10px;">
+                        <form>
+                        <label for="email">Email address</label>
+                        <input name="email" type="text" placeholder="Your email...">
+                        </form> 
+                    </div>
+                </div>
+                
+                <div class="subject">
+                    <form>
+                    <label for="subject">Subject</label>
+                    <input name="subject" type="text" placeholder="Your Subject...">
+                    </form>
+                </div>
+                <div class="message">
+                    <form>
+                    <label for="message">Message</label>
+                    <textarea name="message" placeholder="Your message..."></textarea>
+                    <a href="#" class="contact-btn">Send Message</a>
+                    </form>
+                </div>
+                
             </div>
         </div>
+    </div>
 
         <!-- message form end -->
         <!-- footer start -->

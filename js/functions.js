@@ -1,6 +1,38 @@
 "use strict";
 
 // header start //
+    window.addEventListener('scroll', () =>{
+        const circle = document.getElementsByClassName("circle");
+        const logo = document.getElementById("elvish");
+        const link = document.getElementsByClassName("link");
+        const fixed = document.getElementById('myHeader');
+        if (window.scrollY > 0){
+            for (let i = 0; i<link.length; i++){
+                link[i].style.color = ('black')
+                
+            }
+            fixed.classList.add('fixed');
+            for (let i = 0; i<circle.length; i++){
+                circle[i].style.background = ('black');
+                console.log(circle[i])
+            }
+            fixed.style.boxShadow = ('0px 1px 10px #e6e6e6')
+            logo.style.color = ('black')
+            
+        }else{
+            fixed.classList.remove('fixed');
+            for (let i = 0; i<circle.length; i++){
+                circle[i].style.background = ('white');
+                
+            }
+            for (let i = 0; i<link.length; i++){
+                link[i].style.color = ('white')
+                
+            }
+            fixed.style.boxShadow = ('none')
+            logo.style.color = ('white')
+        }
+    })
 // header end //
 
 // hero start //

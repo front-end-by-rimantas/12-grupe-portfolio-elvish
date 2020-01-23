@@ -1,0 +1,110 @@
+#message-form {
+    display: inline-block;
+    width: 100%;
+}
+#message-form p:nth-child(1) {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 18px;
+}
+#message-form .col-4 p {
+    display: inline-block;
+    width: 100%;
+    color: var(--third-color);
+    margin: 5px 0;
+    font-size: 18px;
+}
+#message-form .col-4 i {
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+}
+#message-form .col-4 h4 {
+    display: inline-block;
+    width: 100%;
+    font-weight: 550;
+    margin: 5px 0;
+}
+    #message-form .phone {
+        display: inline-block;
+        width: 100%;
+        padding-bottom: 20px;
+        margin-top: 25px;
+    }
+    #message-form .email {
+        display: inline-block;
+        width: 100%;
+    }
+    #message-form .address {
+        display: inline-block;
+        width: 100%;
+        margin-top: 20px;
+    }
+    #message-form .name-email{
+        display: inline-block;
+        width: 100%;
+        margin: 20px 0;
+    }
+    #message-form .name-email > .contact-name{
+        width: 50%;
+        float: left;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        }
+    #message-form input{
+        width: 100%;
+        padding: 13px 20px;
+        font-size: 18px;
+        line-height: 20px;
+        color: var(--third-color);
+        }
+    #message-form label{
+        float: left;
+        padding-bottom: 15px;
+        font-weight: bold;
+    }
+    #message-form .name-email > .contact-email{
+        width: 50%;
+        display: inline-block;
+        float: right;
+        
+    }
+    #message-form .name-email >.contact-email input{
+    width: 100%;
+    }
+    #message-form > .subject{
+        width: 100%;
+    }
+
+    #message-form .message{
+        margin-top: 20px;
+    }
+    #message-form .message textarea{
+        min-width: 100%;
+        max-width: 100%;
+        max-height: 200px;
+        min-height: 100px;
+        font-size: 18px;
+        line-height: 20px;
+        color: var(--third-color);
+        padding:  10px 20px;
+    }
+    #message-form .message .contact-btn{
+        text-decoration: none;
+        float: right;
+        padding: 12px 25px;
+        border: 2px solid var(--secondary-color);
+        border-radius: 5px;
+        background-color: var(--secondary-color) ;
+        color: white;
+        margin-top: 12px;
+    }
+    #message-form .message .contact-btn:hover{
+        background-color: white;
+        color: black;
+        transition: 1s;
+    }
+
+    
